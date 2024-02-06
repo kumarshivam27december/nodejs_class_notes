@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity-2 (implementation of array and function using javascript)</title>
+</head>
+<body>
+  <h2>Enter Details</h2>
+  <form id="detailsForm">
+    Name: <input type="text" id="name"><br><br>
+    Age :  <input type="number" id="age"><br><br>
+    <button type="button" onclick="addDetails()">Submit</button>
+  </form>
+  <h2>Details</h2>
+  <table id="detailsTable">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </table>
+  <script>
+    var detailsArray = []; // Array to store details
+    function addDetails() {
+      var name = document.getElementById("name").value;
+      var age = document.getElementById("age").value;
+      detailsArray.push({ name: name, age: age }); // Add details to the array
+      var table = document.getElementById("detailsTable");
+      var row = table.insertRow(-1);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = name;
+      cell2.innerHTML = age;
+    }
+  </script>
+</body>
+</html>

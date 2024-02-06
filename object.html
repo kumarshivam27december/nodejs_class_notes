@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        /* var emp = {id:31141,name:brajesh,age:40};
+        document.write(emp.id+" "+emp.name+" "+emp.id); */
+
+        //var emp = new Object();
+        //emp.id=101;
+        //emp.name="ravi malik";
+        //emp.salary = 50000;
+        //document.write(emp.id+" "+emp.name+" "+emp.salary);
+
+        const person={
+            firstname:"Brijesh",
+            lastname:"pandey",
+            id:31141,
+            fullname:function(){
+                return this.firstname+" "+this.lastname;
+            }
+        };
+
+        //display data from the object
+        document.getElementById("demo").innerHTML = person.fullname();
+
+    </script>
+</body>
+</html>
