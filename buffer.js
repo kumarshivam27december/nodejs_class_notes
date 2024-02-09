@@ -77,6 +77,7 @@ if(result<0){
 */ 
 
 
+
 /*
 //buffer slicing
 var buffer1 = new Buffer('Tutorialspoint');
