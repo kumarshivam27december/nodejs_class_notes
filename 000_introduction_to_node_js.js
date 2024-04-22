@@ -1,0 +1,5 @@
+/*
+
+what does backend means in the full stack development
+
+*/
